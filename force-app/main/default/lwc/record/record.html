@@ -1,0 +1,32 @@
+<template>
+    <div class="acc-container">
+        <lightning-record-view-form record-id={recordId} object-api-name="Account">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_6-of-12">
+                    <div class="slds-box custom-box">
+                        <lightning-output-field 
+                            field-name="Name"
+                            variant="standard">
+                        </lightning-output-field>
+                        <lightning-output-field 
+                            field-name="Website"
+                            variant="standard">
+                        </lightning-output-field>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_6-of-12">
+                    <div class="slds-box custom-box">
+                        <lightning-output-field 
+                            field-name="Industry"
+                            variant="standard">
+                        </lightning-output-field>
+                        <lightning-output-field 
+                            field-name="AnnualRevenue"
+                            variant="standard">
+                        </lightning-output-field>
+                    </div>
+                </div>
+            </div>
+        </lightning-record-view-form>
+    </div> 
+</template>
