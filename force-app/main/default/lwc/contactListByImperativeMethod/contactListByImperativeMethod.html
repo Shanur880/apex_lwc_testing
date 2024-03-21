@@ -1,0 +1,29 @@
+<template>
+    <div class= "slds-m-around_medium custom-background">
+        <template if:true={contacts}>
+            <ul class="slds-has-dividers_around-space">
+                <template for:each={contacts} for:item="contact">
+                    <li key={contact.Id} class="slds-item slds-m-bottom_medium">
+                        <article class="slds-tile slds-media">
+                            <div class="slds-media__body">
+                                <div class="slds-tile__detail slds-text-heading_small">
+                                    {contact.Name}
+                                </div>
+                                <div class="slds-tile__detail">
+                                    <p class="slds-text-body_small">
+                                        Email: {contact.Email}<br/>
+                                        Phone: {contact.Phone}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={contacts}>
+            <div class="slds-text-align_center slds-text-color_weak slds-var-m-top_medium custom-background">
+            </div>
+        </template>
+    </div>
+</template>

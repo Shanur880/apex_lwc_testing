@@ -1,0 +1,15 @@
+<template>
+  <!-- Display a Lightning card for creating an Account -->
+  <lightning-card title="Create Account">
+      <!-- Use a Lightning record form for easy data entry -->
+      <lightning-record-form
+          columns={columns}
+          layout-type="Compact"
+          object-api-name={objectApiName}
+          record-id={recordId}
+          fields={fields}
+          onsuccess={handleSuccess}
+          onerror={handleError}
+      ></lightning-record-form>
+  </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card icon-name="standard:client" variant="base">
+        <!-- Use a div with slot="title" for the card title -->
+        <div slot="title">Opportunity</div>
+
+        <!-- Use a lightning-record-form for easy data entry -->
+        <lightning-record-form
+
+            title="Opportunit"
+            columns={columns}
+            layout-type="compact"
+            object-api-name={objectApiName}
+            record-id={recordId}
+            fields={fields}
+            onsuccess={handleSuccess}
+            onerror={handleError}
+            onsubmit={handleSubmit}>
+        </lightning-record-form>
+    </lightning-card>
+
+</template>
